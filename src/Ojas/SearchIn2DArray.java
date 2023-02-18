@@ -14,6 +14,7 @@ public class SearchIn2DArray {
         int[] ans = search(arr, target);// format pf return value {row, col}
         System.out.println(Arrays.toString(ans));
         System.out.println(max(arr));
+        System.out.println(Integer.MIN_VALUE);
     }
     static int[] search(int[][] arr, int target){
         for (int row = 0; row < arr.length; row++) {
