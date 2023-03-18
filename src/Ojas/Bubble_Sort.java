@@ -4,10 +4,25 @@ import java.util.Arrays;
 
 public class Bubble_Sort {
     public static void main(String[] args) {
-        int[] arr = {5,4,3,2,1};
-        selection(arr);
+        int[] arr = {5,3,4,2,1};
+        insertion(arr);
         System.out.println(Arrays.toString(arr));
     }
+
+    //Insertion Sort
+    static void insertion(int[] arr){
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = i+1; j > 0; j--) {
+                if(arr[j] < arr[j-1]){
+                    swap(arr, j, j-1);
+                }else{
+                    break;
+                }
+            }
+        }
+    }
+
+    //Selection Sort
     static void selection(int[] arr){
         for (int i = 0; i < arr.length; i++) {
             int last = arr.length - i - 1;
@@ -30,6 +45,8 @@ public class Bubble_Sort {
         }
         return max;
     }
+
+    //Bubble Sort
 
     static void bubble(int[] arr){
         boolean swapped;
