@@ -7,6 +7,7 @@ public class CyclicSort {
         int[] arr = {3,5,2,1,4};
         sort(arr);
         System.out.println(Arrays.toString(arr));
+        System.out.println("Hello Ojas");
     }
     static void sort(int[] arr){
         int i = 0;
